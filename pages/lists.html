@@ -4,83 +4,117 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>ADSE2509 Demosite - HTML Lists</title>
+    <link href="../css/main.css" rel="stylesheet">
 </head>
 <body><h1>HTML Lists </h1>
-    <p>An HTML list is a collection of related items e.g., days of the week or ingredients in arecipe. This page will illustrate types of lists we can create in a webpage.</p>
-Lists Content
+    <p>An HTML list is a collection of related items e.g., days of the week or ingredients in arecipe. 
+        This page will illustrate types of lists we can create in a webpage.</p>
+<h2>Lists Content</h2>
 
-Ordered Lists
+<h3>Ordered Lists</h3>
 
-This is a collection of items in a particular order or steps that need to be followed or carried out in a given order. Some examples are given below.
+<p>This is a collection of items in a particular order or steps that need to be followed or carried out in a given order. 
+  Some examples are given below.
+</p>
+<h3>Days in a Week:</h3>
+<ol>
+  <li>Sunday</li>
+  <li>Monday</li>
+  <li>Tuesday</li>
+  <li>Wednesday</li>
+  <li>Thursday</li>
+  <li>Friday</li>
+  <li>Saturday</li>
+</ol>
 
-Days in a Week:
-1.Sunday
-2.Monday
-3.Tuesday
-4.Wednesday
-5.Thursday
-6.Friday
-7.Saturday
+<h3>Unordered Lists</h3>
 
-Unordered Lists
+<p>This is a collection of items in no specific order or preference, though the items are related. 
+  An example is a list of ingredients to make KFC Chicken.
+</p>
+<h3>KFC Chicken Recipe:</h3>
 
-This is a collection of items in no specific order or preference, though the items are related. An example is a list of ingredients to make KFC Chicken.
+<h4>Ingredients</h4>
+<ul>
+  <li>Unseasoned chicken (whatever you fancy)</li>
+  <li>Self raising flour</li>
+  <li>For the seasoning 5 cups of plain flour</li>
+  <li>1/2 tbsp oregano</li>
+  <li>1/2 tbsp thyme</li>
+  <li>1 tbsp ginger</li>
+  <li>2 tbsp garlic powder</li>
+  <li>1 tbsp mustard powder</li>
+  <li>1 tbsp celery salt</li>
+  <li>1 tbsp black pepper</li>
+  <li>1/3 tbsp sea salt </li>
+  <li>1 tbsp white pepper</li>
+  <li>4 tbsp paprika</li>
+  <li>For the egg wash 1 egg</li>
+  <li>Dash of milk</li>
+</ul>
 
-KFC Chicken Recipe:
+<h3>Definition List</h3>
 
-Ingredients
-•Unseasoned chicken (whatever you fancy)
-•Self raising flour
-•For the seasoning 5 cups of plain flour
-•1/2 tbsp oregano
-•1/2 tbsp thyme
-•1 tbsp ginger
-•2 tbsp garlic powder
-•1 tbsp mustard powder
-•1 tbsp celery salt
-•1 tbsp black pepper
-•1/3 tbsp sea salt 
-•1 tbsp white pepper
-•4 tbsp paprika
-•For the egg wash 1 egg
-•Dash of milk
+<h4>Types of Nouns</h4>
+<dl>
+  <dt>Common Noun:</dt><dd>It is a name of an object in general, such as pencil, pen, paper, and so on.</dd>
+  <dt>Proper Noun:</dt><dd>It is the unique name of a person or a place. </dd>
+</dl>
 
-Definition List
+<h3>Nested Lists</h3>
 
-Types of Nouns
-Common Noun:It is a name of an object in general, such as pencil, pen, paper, and so on.Proper Noun:It is the unique name of a person or a place. 
-Nested Lists
+<p>This is a list that contains other list(s) within it. It can contain either an ordered or unordered lists or both. 
+An example of this is the list of courses, modules and the respective semester they are offered at Edulink International College :-
+</p>
+<ol>
+    <li>ACCP/ADSE
+        <ol type="i">
+         <li>Semester 1 
+           <ol type="a">
+             <li>Programming Practices &amp; Techniques</li>
+             <li>Elementary Programming In C</li>
+             <li>Building Modernistic Website</li>
+             <li>UI &amp; UX for RWD</li>
+             <li>Front End Development using React</li>
+             <li>Data Management using SQL server 2022</li>
+           </ol>
+         </li> 
 
-This is a list that contains other list(s) within it. It can contain either an ordered or unordered lists or both. An example of this is the list of courses, modules and the respective semester they are offered at Edulink International College :-
+         <li>Semester 2 
+            <ol type="a">
+             <li>Data Processing with XML and JSON</li>
+             <li>OOP Concepts</li>
+             <li>Java Fundamentals</li>
+             <li>Java Professional</li>
+             <li>Building Apps Using C#</li>
+             <li>Emerging Job Areas (SMAC)</li>
+           </ol>
+         </li>
+        </ol>
+    </li>
+  
+ 
+    <li>ARENA/Multimedia 
+     <ol type="i">
+       <li>Semester 1
+         <ol type="a"> 
+           <li>Digital imaging</li>
+           <li>Working with vectors</li>
+           <li>Colour Theory</li>
+         </ol>
+       </li>
 
-1.ACCP/ADSE 
-Semester 1 
-Programming Practices &amp; Techniques
-Elementary Programming In C
-Building Modernistic Website
-UI &amp; UX for RWD
-Front End Development using React
-Data Management using SQL server 2022 
-
-Semester 2 
-Data Processing with XML and JSON
-OOP Concepts
-Java Fundamentals
-Java Professional
-Building Apps Using C#
-Emerging Job Areas (SMAC)
+       <li>Semester 2
+         <ol type="a"> 
+           <li>Video editing</li>
+           <li>Sound editing</li>
+       </li>
+     </ol>
+    </li>
+</ol> 
 
 
-2.ARENA/Multimedia 
-Semester 1 
-Digital imaging
-Working with vectors
-Colour Theory
-
-Semester 2 
-Video editing
-Sound editing
-<footer>ADSE2509 COPYRIGHT &copy; 2024 - 2025 <!--- TODO: use js to dynamically get the current year --><br>
-        Designed by Adan Designs. <!--- TODO: make this a link to our design company`s website --></footer>
+<footer><br>ADSE2509 COPYRIGHT &copy; 2024 - 2025 <!--- TODO: use js to dynamically get the current year --><br>
+Designed by Adan Designs. <!--- TODO: make this a link to our design company`s website --></footer>
 </body>
 </html>
