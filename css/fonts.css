@@ -1,0 +1,31 @@
+@charset "utf-8";
+/*css documment containing with the fonts to be used across all devices on all browsers.*/
+/* Import the fonts style to allow use webfonts in our site.*/
+
+@font-face {
+    font-family: 'Gravitas One';
+    src: url('../webfonts/GravitasOne.woff2') format('woff2'),
+        url('../webfonts/GravitasOne.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: url('../webfonts/RobotoCondensed-Regular.woff2') format('woff2'),
+        url('../webfonts/RobotoCondensed-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: url('../webfonts/RobotoCondensed-Italic.woff2') format('woff2'),
+        url('../webfonts/RobotoCondensed-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+

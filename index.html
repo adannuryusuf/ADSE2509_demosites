@@ -1,32 +1,50 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADSE2509 Demosite -Home</title>
+    <title>ADSE2509 Demosite - Home</title>
     <link rel="stylesheet" href="css/main.css"/>
 </head>
 <body>
+    
     <div id="container">
-        <!-- links to our media handle -->
-         <h1>follow us on social media</h1>
-         <div class="social-icons mt-4">
-            <a href="#" target="_blank" title="">linkedin</a>
-            <a href="#" target="_blank" title="follow us on ">instagram</a>
-            <a href="#" target="_blank" title="follow us on ">tiktok</a>
-            <a href="#" target="_blank" title="follow us onfacebook "> facebook</a>
-            <a href="#" target="_blank" title="follow us on twiter ">twiter</a>
+        <!-- Links to our social media handles -->
+        <h1 class="social-heading">Follow us on social media</h1>
+            <div class="social-heading">
+                <a href="#" target="_blank" title="LinkedIn">LinkedIn</a>
+                <a href="#" target="_blank" title="Instagram">Instagram</a>
+                <a href="#" target="_blank" title="TikTok">TikTok</a>
+                <a href="#" target="_blank" title="Facebook">Facebook</a>
+                <a href="#" target="_blank" title="Twitter">Twitter</a>
+            </div>   
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/text-formatting.html">Text-formatting</a></li>
+            <li><a href="pages/lists.html">Lists</a></li>
+            <li><a href="pages/links.html">Links</a></li>
+            <li><a href="images/images.html">Images</a></li>
+        </ul>   
  
-         </div>
-    <h1 class="page-heading"> <span class="page-heading-underline"></span>Welcome to the ADSE2509 Demosite😍</h1>
-    <p>This site illustrates various concept that are used in creating a website</p>
-    <footer class="page-footer">ADSE2509 copyright &copy; 2023 - 2025
-        <span id="currYear"></span> br/>
-        Designed by Adan Designs.<! --TODO: make this link to our design company websites-->
-        <! --TODO: make this link to our design company websites-->
-       
+        <h1 class="page-heading">
+            Welcome to the ADSE2509 Demosite 😍
+            <span class="page-heading-underline"></span>
+        </h1>
+ 
+        <p>
+            This site illustrates various concepts that are used in creating a website.
+        </p>
+ 
+        <footer class="page-footer">
+            ADSE2509 copyright 2025 - &copy;
+            <span id="currYear"></span><br>
+            Designed by
+            <a href="https://adandesigns.example" target="_blank">Adan Designs</a>
         </footer>
-        <script>document.getElementByid('currYear').in; nerHTML = new Date().getFullYear();</script>
     </div>
+ 
+    <script>
+        document.getElementById('currYear').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>

@@ -1,71 +1,109 @@
 @charset "utf-8";
- 
 /*css documment containing site wide rules to be applied across all devices on all browsers.*/
 /* Import the fonts style to allow use webfonts in our site.*/
+
+/* import the lobster font the google api */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 @import url('fonts');
- 
+
 /*style the page /document body */
 @media (max-width: 767px){
+      body {
+          margin: 0;
+          padding: 70px 0;
+          font-size: 17px;
+          font-family: 'Gravitas One';
+      }
+}
+body {
+          background-image: url("../images/city-9169729_1280.jpg");
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+      }
  
-    body {
- 
-        color: white;
-        background-color: black; 
-        background-image: url("../images/tree.jpg");
-        background-repeat: no-repeat; 
-        background-position: center center;
-        background-size: cover;
-    }
+/*Heading styles*/
+h1 {
+    color: #ff4444;
 }
  
-body{
- 
-    margin: 0;
-    padding: 0;
-    padding-top: 70px;
-    text-align: justify;
-    font-size: 17px;
-    background-color: deeppink;
+h2 {
+    color: #ff9900;
 }
  
-#container{
+h3 {
+    color: #33cc33;
+}
  
-    margin:2% auto;
-    padding-bottom: 10px;
-    padding-left: 1%;
-    padding-right: 1%;
-    background-color: rgba(0,0,0,75);
-    color: #fff;
+h4 {
+    color: #3399ff;
+}
+ 
+h5 {
+    color: #cc33ff;
+}
+ 
+h6 {
+    color: #ff33aa;
+}
+ 
+/*Normal text*/
+p, li, dd {
+    color: #ffffff;
+}
+ 
+ 
+/*Opaque content box*/
+#container {
     width: 90%;
-    border-top-right-radius: 25px;
-    border-bottom-left-radius: 25px ;
+    max-width: 1000px;
+    margin: 0 auto 60px auto;
+    padding: 25px;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #ffffff;
+    border-radius: 20px;
 }
-.page-heading
-{
-color: #f00;
-font-weight: 800;
-font-size: 2.2em;
-text-align: center;
-font-size: 1.5em;
- 
- 
+ /*social media Heading styles*/
+.social-heading {
+    font-family: 'Gravitas One';
+    color: blueviolet;
+    text-align: center;
+    font-weight: 800;
 }
- 
-.page-heading-underline{
-    border-bottom: medium double #0beaf5;
-   
-color: #f00;
-font-weight: 800;
-font-size: 2.2em;
-text-align: center;
-font-size: 1.5em;
- 
-}
-.page-footer{
-color: #0beaf5;
-text-align: center;
-margin-top: 2px;
-margin-bottom: 2px;
-/*TODO: specify the page footer font in the our site .*/
+/*Heading styles*/
+
+.page-heading {
+    text-align: center;
+    color: #ff4444;
+    font-family: 'Roboto Condensed';
 }
  
+.page-heading-underline {
+    display: block;
+    width: 60%;
+    height: 4px;
+    background-color: #0beaf5;
+    margin: 10px auto;
+}
+ 
+/*Footer*/
+.page-footer {
+    margin-top: 30px;
+    text-align: center;
+    color: #0beaf5;
+    font-size: 0.9em;
+    font-family: "lobster";
+ 
+}
+ 
+/*Links*/
+a {
+    color: #0beaf5;
+    text-decoration: none;
+}
+ 
+a:hover {
+    text-decoration: underline;
+}

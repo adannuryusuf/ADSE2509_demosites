@@ -1,57 +1,92 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>ADSE2509 Demosite - HTML Text Formatting Tags</title>
-  <link href="../css/main.css" rel="stylesheet">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADSE2509 Demosite - Text Formatting</title>
+    <link rel="stylesheet" href="../css/main.css"/>
 </head>
-<body><h1>HTML Text Formatting Tags</h1>
-    <p>This page is to illustrate the HTML Text Formatting Tags</p>
-<h1>Heading 1</h1>
-
-<h2>Heading 2</h2>
-
-<h3>Heading 3</h3>
-
-<h4>Heading 4</h4>
-
-<h5>Heading 5</h5>
-
-<h6>Heading 6</h6>
-
-
-<h3>Updating, Emphasizing, and Shifting Text</h3>
-
-<p>This text is <b>displayed in bold.</b></p>
-<p>This text is <i>displayed in italic.</i></p>
-<p><u>This text is underlined.</u></p>
-<p><small>This text is displayed smaller.</small></p> 
-<p>This is an example of <del>deleted inserted text.</del></p>
-<p>The is an example of <strong>Strong text.</strong></p>
-<p>The is an example of <sub>subscript text.</sub></p>
-<p>The is an example of <sup>superscript text.</sup></p>
-<p>Do not forget to <mark>buy milk</mark> today.</p>
-
-<h3>Using superscripts and subscripts</h3>
-
-<p>The area of a circle is given by:
-
-A = &PI;iir2 </p>
-<p>The chemical equation of mixing Ferric Oxide &amp; Carbon is given below.
-2Fe<sub>2</sub>O<sub>(s)</sub> + 3C<sub>(s)</sub> = 4Fe<sub>(s)</sub> + 3CO<sub>2(g)</sub> </p>
-<h3>A Simple C Program</h3>
-<p>//First C program to display "Hello World!"</p>
-<p>&nbsp;#include &lt;stdio.h&gt;</p>
-<p>&nbsp;//main function begins program execution</p>
-<p>&nbsp;void main()</p>
-<p>&nbsp;{&nbsp;</p>
-<p>&nbsp; &nbsp; &nbsp; printf("Hello World!");&nbsp;</p>
-<p>&nbsp;}&nbsp;</p>
-<p>&nbsp;The program outputs/displays...
-  Hello World!</p>
-<p>The font styles properties allow you to specify the font for the text. Theyallow you to change the different font attributes of the text such as font, size,and style of the text. The browser must support the font specified by the fontproperties. Otherwise, it will display the default font, which is dependent onthe browser.</p>
-<footer>ADSE2509 COPYRIGHT &copy; 2024 - 2025 <!--- TODO: use js to dynamically get the current year --><br>
-        Designed by Adan Designs. <!--- TODO: make this a link to our design company`s website --></footer>
+<body>
+  <div id="container">
+    <!-- Links to our social media handles -->
+    <h1 class="social-heading">Follow us on social media</h1>
+        <div class="social-heading">
+            <a href="#" target="_blank" title="LinkedIn">LinkedIn</a>
+            <a href="#" target="_blank" title="Instagram">Instagram</a>
+            <a href="#" target="_blank" title="TikTok">TikTok</a>
+            <a href="#" target="_blank" title="Facebook">Facebook</a>
+            <a href="#" target="_blank" title="Twitter">Twitter</a>
+        </div>   
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../pages/text-formatting.html">Text-formatting</a></li>
+        <li><a href="../pages/lists.html">Lists</a></li>
+        <li><a href="../pages/links.html">Links</a></li>
+        <li><a href="../images/images.html">Images</a></li>
+    </ul> 
+    <h1 class="page-heading">HTML Text Formatting Tags<span class="page-heading-underline"></span>
+    </h1>
+    <p>This page illustrates the commonly used HTML text formatting tags.</p>
+ 
+    <h1>Heading Examples</h1>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+ 
+    <h3>Text Formatting</h3>
+    <p>This text is <b>bold</b>.</p>
+    <p>This text is <i>italic</i>.</p>
+    <p><u>Underlined text</u></p>
+    <p><small>Smaller text</small></p>
+    <p>Example of <del>deleted text</del></p>
+    <p>Example of <strong>strong text</strong></p>
+    <p>Example of <sub>subscript text</sub></p>
+    <p>Example of <sup>superscript text</sup></p>
+    <p>Do not forget to <mark>buy milk</mark> today.</p>
+ 
+    <h3>Formulas</h3>
+    <p>The area of a circle is given by: <br>
+        <strong>A = &pi; × r<sup>2</sup></strong>
+    </p>
+    <p>Chemical equation for Ferric Oxide and Carbon:</p>
+    <p>
+        2Fe<sub>2</sub>O<sub>(s)</sub> + 3C<sub>(s)</sub> → 4Fe<sub>(s)</sub> + 3CO<sub>2(g)</sub>
+    </p>
+ 
+    <h3>A Simple C Program</h3>
+    <pre><code>
+// First C program to display "Hello World!"
+#include &lt;stdio.h&gt;
+ 
+void main() {
+    printf("Hello World!");
+}
+    </code></pre>
+    <p>The program outputs: <strong>Hello World!</strong></p>
+    <h3>Font Style Explanation</h3>
+    <p>
+        Font style properties allow you to specify the font for the text. They allow you to change
+        different attributes such as font family, size, weight, and style. The browser must support
+        the specified font; otherwise, it will display the default font, which depends on the browser.
+    </p>
+ 
+ 
+    <footer class="page-footer">
+        ADSE2509 Copyright 2025 - &copy;
+        <span id="currYear"></span><br>
+        Designed by
+        <a href="https://adandesigns.example" target="_blank">Adan Designs</a>
+    </footer>
+ 
+</div>
+ 
+<script>
+    document.getElementById("currYear").textContent =
+        new Date().getFullYear();
+</script>
+ 
 </body>
 </html>
