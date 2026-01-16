@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADSE2509 Demosite - CSS Animation</title>
+    <link rel="stylesheet" href="../../css/main.css"/>
+    <!--internal stylesheet that will be used to illustrate CSS transitions-->
+    <style>
+    #css-animation-div{
+        width: 150px;
+        height: 80;
+        background-color: #6d8728;
+        position: center;
+        font-weight: 700;
+        padding: 15px;
+        font-size: 20px;
+        animation: anim_div 5s 2;
+    } 
+    @keyframes anim_div
+    {
+        0%
+        {
+            transform: rotate(0deg);
+            left: 0px;
+        }
+        25%
+        {
+            transform: rotate(20deg);
+            left: 500px;
+        }
+        50%
+        {
+            transform: rotate(0deg);
+            left: 500px;
+        }
+        75%
+        {
+            transform: rotate(0deg);
+            left: 0px;
+            background-color: aqua;
+        }
+        100%
+        {
+            transform: rotate(360deg);
+            left: 0px;
+        }
+    }
+    
+    
+    </style>
+</head>
+<body>
+ <div id="container">
+        <!-- Links to our social media handles -->
+        <h2 class="social-heading">Follow us on social media</h2>
+            <div class="social-heading">
+                <a href="#" target="_blank" title="LinkedIn">LinkedIn</a>
+                <a href="#" target="_blank" title="Instagram">Instagram</a>
+                <a href="#" target="_blank" title="TikTok">TikTok</a>
+                <a href="#" target="_blank" title="Facebook">Facebook</a>
+                <a href="#" target="_blank" title="Twitter">Twitter</a>
+            </div>   
+        <ul>
+            <li><a href="../../index.html">Home</a></li>
+        <li><a href="../pages/text-formatting.html">Text-formatting</a></li>
+        <li><a href="../pages/lists.html">Lists</a></li>
+        <li><a href="../pages/links.html">Links</a></li>
+        <li><a href="../images/images.html">Images</a></li>
+        </ul> 
+
+
+    <h1 class="page-heading">
+        CSS Animation
+        <span class="page-heading-underline"></span>
+    </h1>
+       
+    <p>CSS animation is the process of changing an elementproperty over a given duration of time without 
+        the need for jvascript. You can change an element size color location on screen and even rotate it to name a few. 
+        To  create a css animation you need to  define properties to be animated anf the keyframaes which 
+        define how the animated element will display at a given time. </br></p>
+    <div id="css-animation-div"></div>
+    <footer class="page-footer">
+        ADSE2509 Copyright 2025 - &copy;
+        <span id="currYear"></span><br>
+        Designed by
+        <a href="https://adandesigns.example" target="_blank">
+            Adan Designs
+        </a>
+    </footer>
+ 
+</div>
+ 
+<script>
+    document.getElementById("currYear").textContent =
+        new Date().getFullYear();
+</script>
+ 
+</body>
+</html>
+ 
+ 

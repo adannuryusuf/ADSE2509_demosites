@@ -1,10 +1,33 @@
-templates <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PAGE TITLE HERE</title>
-    <link rel="stylesheet" href="../css/main.css"/>
+    <title>ADSE2509 Demosite - CSS Transitions</title>
+    <link rel="stylesheet" href="../../css/main.css"/>
+    <!--internal stylesheet that will be used to illustrate CSS transitions-->
+    <style>
+    #transition{
+        width: 150px;
+        height: 150;
+        background-color: #f00;
+        transition: background 2s ease-out, width 2s ease-out, height 2s ease-out;
+    } 
+    #transition:hover{
+        width: 250px;
+        height: 250px;
+        background-color: #f80;
+    }
+    .btn{
+        background-color: #00a5ff;
+        color: #0a00fd;
+        transition: all 1s ease-out;
+    }
+    .btn:hover{
+        background-color: #0074b2;
+        color: purple;
+        }
+    </style>
 </head>
 <body>
  <div id="container">
@@ -18,7 +41,7 @@ templates <!DOCTYPE html>
                 <a href="#" target="_blank" title="Twitter">Twitter</a>
             </div>   
         <ul>
-            <li><a href="../index.html">Home</a></li>
+            <li><a href="../../index.html">Home</a></li>
         <li><a href="../pages/text-formatting.html">Text-formatting</a></li>
         <li><a href="../pages/lists.html">Lists</a></li>
         <li><a href="../pages/links.html">Links</a></li>
@@ -27,13 +50,15 @@ templates <!DOCTYPE html>
 
 
     <h1 class="page-heading">
-        PAGE HEADING HERE
+        CSS Transitions
         <span class="page-heading-underline"></span>
     </h1>
        
-    <p>PAGE CONTENT goes here.</p>
-   
-  
+    <p>CSS transitions is a smooth way of providing a transitions to a given css property over a given duration.
+    </br>Kindly hover yout mouse over the red square or buttons below to see hodw CSS transitions work</p>
+    <div id="transitions"></div>
+    <input type="button" class="btn" value="button1">&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="button" class="btn" value="button2">&nbsp;&nbsp;&nbsp;&nbsp;
     <footer class="page-footer">
         ADSE2509 Copyright 2025 - &copy;
         <span id="currYear"></span><br>
