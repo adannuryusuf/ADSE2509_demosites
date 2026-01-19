@@ -16,6 +16,7 @@
           font-family: 'Gravitas One';
       }
 }
+@media (min-width: 768px){
 body {
           background-image: url("../images/city-9169729_1280.jpg");
           background-size: cover;
@@ -23,6 +24,7 @@ body {
           background-repeat: no-repeat;
           background-attachment: fixed;
       }
+    }
  
 /*Heading styles*/
 h1 {
@@ -106,4 +108,49 @@ a {
  
 a:hover {
     text-decoration: underline;
+}
+/*Image gallery - responsive grid */
+.gallery {
+    display: grid;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    grid-template-columns: 1fr;
+}
+/* tablet device override*/
+@media (max-width: 1439px) and 
+@media (min-width: 1024px) {
+    .gallery {grid-template-columns: repeat(2, 1fr);}
+}
+/* desktop device override*/
+@media (max-width: 1439px) and 
+@media (min-width: 1024px) {
+    .gallery {grid-template-columns: repeat(3, 1fr);}
+}
+/* device with 1440 and above override*/
+@media (max-width: 1439px) and 
+@media (min-width: 1024px) {
+    .gallery {grid-template-columns: repeat(4, 1fr);}
+}
+/* card styling */
+.gallery .item{
+    background-color: #fff;
+    border-radius: .5rem;
+    overflow: hidden;
+    box-shadow:hsl(from color h s l);
+    display: grid;
+    grid-template-rows: auto auto;
+}
+.gallery .img{
+    width: 100%;
+    height:auto;
+    object-fit: cover;
+    border: 2px groove #fff;
+}
+.gallery figcaption{
+    padding: .7rem;
+    font-size: .95rem;
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+    color: #000;
 }

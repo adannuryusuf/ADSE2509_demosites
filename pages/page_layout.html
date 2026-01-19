@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADSE2509 Demosite - Flex and grid layout</title>
+    <link rel="stylesheet" href="../css/main.css"/>
+<style>
+    /* css to style the flexbox */
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+    .flex-items {
+        margin: 5px;
+    }
+     /* common rules for the flex and the grid items */
+    .flex-items, .grid-items {
+        background-color: gray;
+        text-align: center;
+        padding: 10px;
+    }
+     /* code for the grid layout */
+     .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 10px;
+        padding: 20px;
+     }
+     /*style the page /document body */
+    @media (max-width: 767px){
+        .flex-items {flex: 1 0 90%;}
+        .grid-container {grid-template-columns: 1fr;}
+    }
+        /*style the page /document body */
+    @media (min-width: 768px){
+        .flex-container {justify-content: space-between;}
+        .flex-items {flex: 1 0 25%; border-radius: 7px;}
+        .grid-container {grid-template-columns: repeat(3, 1fr); grid-auto-rows: minmax(100px, auto);}
+        .grid-items:nth-child(1){grid-row: span 3;}
+        .grid-items:nth-child(5){grid-row: span 2;}
+        .grid-items:nth-child(6){grid-column: 2/-1 ;}
+        
+
+    }
+
+</style>
+</head>
+<body>
+ <div id="container">
+        <!-- Links to our social media handles -->
+        <h2 class="social-heading">Follow us on social media</h2>
+            <div class="social-heading">
+                <a href="#" target="_blank" title="LinkedIn">LinkedIn</a>
+                <a href="#" target="_blank" title="Instagram">Instagram</a>
+                <a href="#" target="_blank" title="TikTok">TikTok</a>
+                <a href="#" target="_blank" title="Facebook">Facebook</a>
+                <a href="#" target="_blank" title="Twitter">Twitter</a>
+            </div>   
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+        <li><a href="../pages/text-formatting.html">Text-formatting</a></li>
+        <li><a href="../pages/lists.html">Lists</a></li>
+        <li><a href="../pages/links.html">Links</a></li>
+        <li><a href="../images/images.html">Images</a></li>
+        <li><a href="page_layout.html">Page Layouts</a></li>
+        <li><a href="#">CSS</a><ul>
+            <li><a href="css_pages/animation.html">Animation</a></li>
+            <li><a href="css_pages/transformations.html">Transformations</a></li>
+            <li><a href="css_pages/transitions.html">Transitions</a></li>
+        </ul></li>
+        </ul> 
+
+
+    <h1 class="page-heading">
+        CSS Flex and grid layout
+        <span class="page-heading-underline"></span>
+    </h1>
+    <h2 class="section-heading">Flex box layout</h2>
+       
+    <p>The flex box layout is a one dimensional layout for distributing space between items and includes numerous alignment capabilities. 
+        An example of a flexbox layout is given below</p>
+        <div class="flex-container">
+            <div class="flex-items">Item 1</div>
+            <div class="flex-items">Item 2</div>
+            <div class="flex-items">Item 3</div>
+            <div class="flex-items">Item 4</div>
+            <div class="flex-items">Item 5</div>
+        </div>
+   
+    <h2 class="section-heading">Grid layout</h2>
+    <p>A grid is a set of intersecting horizontal and vertical lines defining rows and columns that introduces a two dimensional grid sytem to CSS. 
+    Elements can be placed with these row and column lines. An example of a grid is givsen below.</p>
+        <div class="grid-container">
+            <div class="grid-items">Item 1</div>
+            <div class="grid-items">Item 2</div>
+            <div class="grid-items">Item 3</div>
+            <div class="grid-items">Item 4</div>
+            <div class="grid-items">Item 5</div>
+            <div class="grid-items">Item 6</div>
+            <div class="grid-items">Item 7</div>
+        </div>
+  
+    <footer class="page-footer">
+        ADSE2509 Copyright 2025 - &copy;
+        <span id="currYear"></span><br>
+        Designed by
+        <a href="https://adandesigns.example" target="_blank">
+            Adan Designs
+        </a>
+    </footer>
+ 
+</div>
+ 
+<script>
+    document.getElementById("currYear").textContent =
+        new Date().getFullYear();
+</script>
+ 
+</body>
+</html>
+ 
+ 
