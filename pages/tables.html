@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADSE2509 Demosite - HTML Tables</title>
+    <link rel="stylesheet" href="../css/main.css"/>
+</head>
+<body>
+    <nav id="main-nav">
+    <button id="menu-toggle" aria-label="Toggle Menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+    </button>
+    <ul id="nav-menu">
+            <li><a href="../index.html">Home</a></li>
+        <li><a href="../pages/text-formatting.html">Text-formatting</a></li>
+        <li><a href="../pages/lists.html">Lists</a></li>
+        <li><a href="../pages/links.html">Links</a></li>
+        <li><a href="../images/images.html">Images</a></li>
+        <li><a href="../pages/page_layout.html">Page Layouts</a></li>
+        <li><a href="#">CSS</a><ul>
+            <li><a href="pages/css_pages/animation.html">Animation</a></li>
+            <li><a href="pages/css_pages/transformations.html">Transformations</a></li>
+            <li><a href="pages/css_pages/transitions.html">Transitions</a></li>
+        </ul></li>
+        </ul> </nav> 
+    
+ <div id="container">
+        <!-- Links to our social media handles -->
+        <h2 class="social-heading">Follow us on social media</h2>
+            <div class="social-heading">
+                <a href="#" target="_blank" title="LinkedIn">LinkedIn</a>
+                <a href="#" target="_blank" title="Instagram">Instagram</a>
+                <a href="#" target="_blank" title="TikTok">TikTok</a>
+                <a href="#" target="_blank" title="Facebook">Facebook</a>
+                <a href="#" target="_blank" title="Twitter">Twitter</a>
+            </div>   
+        
+
+
+    <h1 class="page-heading">
+        HTML Tables
+        <span class="page-heading-underline"></span>
+    </h1>
+       
+    <p>A table is a grid of rows and columns. Rows span from left to right, 
+        while columns span from top to bottom. 
+        An intersection between the row and the column is called a cell.
+
+    </br> Examples of tables are given below:</p>
+    <table border="1" class="data-table" summary="Table displaying the 
+    details of the ADSE2509 intake">
+        <caption>ADSE2509 Students</caption>
+        <tbody>
+            <tr>
+                <th>Student No</th>
+                <th>Names</th>
+                <th>Location</th>
+            </tr>
+            <tr>
+                <td>S001</td>
+                <td>Pascal Kivuitu</td>
+                <td>Machakos</td>
+            </tr>
+             <tr>
+                <td>S002</td>
+                <td>Zakaria</td>
+                <td>Garissa</td>
+            </tr>
+             <tr>
+                <td>S003</td>
+                <td>Fatma</td>
+                <td>Pangani</td>
+            </tr>
+             <tr>
+                <td>S004</td>
+                <td>Justin Ode</td>
+                <td>Syokimau</td>
+            </tr>
+             <tr>
+                <td>S005</td>
+                <td>Adan</td>
+                <td>Mombasa</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>The table below demonstrates how to merge columns</p>
+    <table border="1" class="data-table">
+        <tr>
+            <th colspan="4">Departments &amp; their employees</th>
+        </tr>
+        <tr>
+            <th colspan="2">IT</th>
+            <th colspan="2">Accounts</th>
+        </tr>
+        <tr>
+            <th>Name</th>
+            <th>Location</th>
+            <th>Name</th>
+            <th>Location</th>
+        </tr>
+        <tr>
+            <td>David</td>
+            <td>New York</td>
+            <td>John</td>
+            <td>London</td>
+        </tr>
+        <tr>
+            <td>Kathy</td>
+            <td>New Jersey</td>
+            <td>Peter</td>
+            <td>Los Angeles</td>
+        </tr>
+    </table>
+    <p>The table below illustrates hoiw to merge both rows and columns</p>
+   <table border="1" class="data-table">
+       <caption>Prefered destination by different age groups</caption>
+
+   </table>
+   
+  
+    <footer class="page-footer">
+        ADSE2509 Copyright 2025 - &copy;
+        <span id="currYear"></span><br>
+        Designed by
+        <a href="https://adandesigns.example" target="_blank">
+            Adan Designs
+        </a>
+    </footer>
+ 
+</div>
+ 
+<script>
+    document.getElementById("currYear").textContent =
+        new Date().getFullYear();
+</script>
+ 
+</body>
+</html>

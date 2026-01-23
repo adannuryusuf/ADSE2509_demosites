@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PAGE TITLE HERE</title>
+    <title>ADSE2509 Demosite - HTML Multimedia</title>
     <link rel="stylesheet" href="../css/main.css"/>
 </head>
 <body>
     <nav id="main-nav">
-        <button id="menu-toggle" aria-label="Toggle Menu">
-           <span class="hamburger-line"></span>
-           <span class="hamburger-line"></span>
-           <span class="hamburger-line"></span>
-        </button>
-
+    <button id="menu-toggle" aria-label="Toggle Menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+    </button>
     <ul id="nav-menu">
             <li><a href="../index.html">Home</a></li>
         <li><a href="../pages/text-formatting.html">Text-formatting</a></li>
@@ -21,14 +21,11 @@
         <li><a href="../pages/links.html">Links</a></li>
         <li><a href="../images/images.html">Images</a></li>
         <li><a href="../pages/page_layout.html">Page Layouts</a></li>
-        <li><a href="#">CSS</a>
-           <ul>
-             <li><a href="../pages/css_pages/animation.html">Animation</a></li>
-             <li><a href="../pages/css_pages/transformations.html">Transformations</a></li>
-             <li><a href="../pages/css_pages/transitions.html">Transitions</a></li>
-           </ul>
-        </li>
-
+        <li><a href="#">CSS</a><ul>
+            <li><a href="pages/css_pages/animation.html">Animation</a></li>
+            <li><a href="pages/css_pages/transformations.html">Transformations</a></li>
+            <li><a href="pages/css_pages/transitions.html">Transitions</a></li>
+        </ul></li>
         </ul> </nav> 
     
  <div id="container">
@@ -45,7 +42,7 @@
 
 
     <h1 class="page-heading">
-        PAGE HEADING HERE
+        HTML Multimedia
         <span class="page-heading-underline"></span>
     </h1>
        
@@ -67,16 +64,6 @@
     document.getElementById("currYear").textContent =
         new Date().getFullYear();
 </script>
-<script>
-const toggleBtn = document.getElementById("menu-toggle");
-const navMenu = document.getElementById("nav-menu");
-
-toggleBtn.addEventListener("click", () => {
-    toggleBtn.classList.toggle("active");
-    navMenu.classList.toggle("active");
-});
-</script>
-
  
 </body>
 </html>
