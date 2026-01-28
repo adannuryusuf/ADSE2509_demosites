@@ -7,9 +7,36 @@
     <link rel="stylesheet" href="../css/main.css"/>
 </head>
 <body>
-  <div id="container">
-    <!-- Links to our social media handles -->
-    <h1 class="social-heading">Follow us on social media</h1>
+
+    <nav id="main-nav">
+        <div id="menu-toggle">
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+        </div>
+
+        <ul id="nav-menu">
+            <li><a href="../index.html">Home</a></li>
+            
+            <li><a href="text-formatting.html">Text Formatting</a></li>
+            <li><a href="lists.html">Lists</a></li>
+            <li><a href="links.html">Links</a></li>
+            <li><a href="tables.html">Tables</a></li> <li><a href="forms.html">Forms</a></li>   <li><a href="multimedia.html">Multimedia</a></li> <li><a href="../images/images.html">Images</a></li>
+            
+            <li><a href="page_layout.html">Page Layouts</a></li>
+            
+            <li><a href="#">CSS</a>
+                <ul>
+                    <li><a href="css_pages/animation.html">Animation</a></li>
+                    <li><a href="css_pages/transformations.html">Transformations</a></li>
+                    <li><a href="css_pages/transitions.html">Transitions</a></li>
+                </ul>
+            </li>
+        </ul> 
+    </nav> 
+    
+    <div id="container">
+        <h2 class="social-heading">Follow us on social media</h2>
         <div class="social-heading">
             <a href="#" target="_blank" title="LinkedIn">LinkedIn</a>
             <a href="#" target="_blank" title="Instagram">Instagram</a>
@@ -17,19 +44,7 @@
             <a href="#" target="_blank" title="Facebook">Facebook</a>
             <a href="#" target="_blank" title="Twitter">Twitter</a>
         </div>   
-    <ul>
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="../pages/text-formatting.html">Text-formatting</a></li>
-      <li><a href="../pages/lists.html">Lists</a></li>
-      <li><a href="../pages/links.html">Links</a></li>
-      <li><a href="../images/images.html">Images</a></li>
-      <li><a href="page_layout.html">Page Layouts</a></li>
-        <li><a href="#">CSS</a><ul>
-            <li><a href="css_pages/animation.html">Animation</a></li>
-            <li><a href="css_pages/transformations.html">Transformations</a></li>
-            <li><a href="css_pages/transitions.html">Transitions</a></li>
-        </ul></li>
-    </ul> 
+
         <h1 class="page-heading">
             HTML Lists
             <span class="page-heading-underline"></span>
@@ -38,8 +53,7 @@
             This page demonstrates the different types of lists
             that can be created using HTML.
         </p>
- 
- 
+
         <h3>Ordered List</h3>
         <h4>Days of the Week</h4>
         <ol>
@@ -51,7 +65,7 @@
             <li>Friday</li>
             <li>Saturday</li>
         </ol>
- 
+
         <h3>Unordered List</h3>
         <h4>KFC Chicken Ingredients</h4>
         <ul>
@@ -65,23 +79,23 @@
             <li>Egg</li>
             <li>Milk</li>
         </ul>
- 
+
         <h3>Definition List</h3>
         <dl>
             <dt>Common Noun:</dt>
             <dd>A general name of an object or idea.</dd>
- 
+
             <dt>Proper Noun:</dt>
             <dd>The specific name of a person or place.</dd>
         </dl>
- 
+
         <h3>Nested List</h3>
         <ol>
             <li>ACCP / ADSE
                 <ol type="a">
                     <li>Semester 1
                         <ol type="i">
-                            <li>Programming Practices &amp; Techniques<li>
+                            <li>Programming Practices &amp; Techniques</li>
                             <li>Elementary Programming in C</li>
                             <li>Building Modernistic Websites</li>
                             <li>UI &amp; UX for RWD</li>
@@ -90,50 +104,58 @@
                         </ol>
                     </li>
                     <li>Semester 2
-                          <ol type="i">
-                               <li>Data Processing with XML and JSON</li>
-                               <li>OOP Concepts</li>
-                               <li>Java Fundamentals</li>
-                               <li>Java Professional</li>
-                               <li>Building Apps Using C#</li>
-                               <li>Emerging Job Areas (SMAC)</li>
-                          </ol>
+                        <ol type="i">
+                            <li>Data Processing with XML and JSON</li>
+                            <li>OOP Concepts</li>
+                            <li>Java Fundamentals</li>
+                            <li>Java Professional</li>
+                            <li>Building Apps Using C#</li>
+                            <li>Emerging Job Areas (SMAC)</li>
+                        </ol>
                     </li>
                 </ol>
             </li>
             <li>ARENA/Multimedia
-                  <ol type="a">
-                      <li>Semester 1
-                          <ol type="i">
-                              <li>Digital imaging</li>
-                              <li>Working with vectors</li>
-                              <li>Colour Theory</li>
-                          </ol>
-                      </li>
- 
-                      <li>Semester 2
-                           <ol type="i">
-                              <li>Video editing</li>
-                              <li>Sound editing</li>
-                           </ol>
-                      </li>
-                   
-    </li>
+                <ol type="a">
+                    <li>Semester 1
+                        <ol type="i">
+                            <li>Digital imaging</li>
+                            <li>Working with vectors</li>
+                            <li>Colour Theory</li>
+                        </ol>
+                    </li>
+
+                    <li>Semester 2
+                        <ol type="i">
+                            <li>Video editing</li>
+                            <li>Sound editing</li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
         </ol>
- 
-    <footer class="page-footer">
-        ADSE2509 Copyright 2025 - &copy;
-        <span id="currYear"></span><br>
-        Designed by
-        <a href="https://adandesigns.example" target="_blank">Adan Designs</a>
-    </footer>
- 
-</div>
- 
-<script>
-    document.getElementById("currYear").textContent =
-        new Date().getFullYear();
-</script>
- 
+
+        <footer class="page-footer">
+            ADSE2509 Copyright 2025 - &copy;
+            <span id="currYear"></span><br>
+            Designed by
+            <a href="https://adandesigns.example" target="_blank">Adan Designs</a>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById("currYear").textContent = new Date().getFullYear();
+        
+        const menuToggle = document.getElementById('menu-toggle');
+        const navMenu = document.getElementById('nav-menu');
+
+        if (menuToggle && navMenu) {
+            menuToggle.addEventListener('click', () => {
+                menuToggle.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+        }
+    </script>
+
 </body>
 </html>

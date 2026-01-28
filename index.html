@@ -8,8 +8,37 @@
 </head>
 <body>
     
+    <nav id="main-nav">
+        <div id="menu-toggle">
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+        </div>
+
+        <ul id="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            
+            <li><a href="pages/text-formatting.html">Text Formatting</a></li>
+            <li><a href="pages/lists.html">Lists</a></li>
+            <li><a href="pages/links.html">Links</a></li>
+            <li><a href="pages/tables.html">Tables</a></li> 
+            <li><a href="pages/forms.html">Forms</a></li>   
+            <li><a href="pages/multimedia.html">Multimedia</a></li> 
+            <li><a href="images/images.html">Images</a></li>
+            
+            <li><a href="pages/page_layout.html">Page Layouts</a></li>
+            
+            <li><a href="#">CSS</a>
+                <ul>
+                    <li><a href="pages/css_pages/animation.html">Animation</a></li>
+                    <li><a href="pages/css_pages/transformations.html">Transformations</a></li>
+                    <li><a href="pages/css_pages/transitions.html">Transitions</a></li>
+                </ul>
+            </li>
+        </ul> 
+    </nav>
+
     <div id="container">
-        <!-- Links to our social media handles -->
         <h1 class="social-heading">Follow us on social media</h1>
             <div class="social-heading">
                 <a href="#" target="_blank" title="LinkedIn">LinkedIn</a>
@@ -18,20 +47,6 @@
                 <a href="#" target="_blank" title="Facebook">Facebook</a>
                 <a href="#" target="_blank" title="Twitter">Twitter</a>
             </div>   
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="pages/text-formatting.html">Text-formatting</a></li>
-            <li><a href="pages/lists.html">Lists</a></li>
-            <li><a href="pages/links.html">Links</a></li>
-            <li><a href="images/images.html">Images</a></li>
-            <li><a href="pages/page_layout.html">Page Layouts</a></li>
-            <li><a href="#">CSS</a><ul>
-                <li><a href="pages/css_pages/animation.html">Animation</a></li>
-                <li><a href="pages/css_pages/transformations.html">Transformations</a></li>
-                <li><a href="pages/css_pages/transitions.html">Transitions</a></li>
-            </ul></li>
-            
-        </ul>   
  
         <h1 class="page-heading">
             Welcome to the ADSE2509 Demosite 😍
@@ -51,7 +66,17 @@
     </div>
  
     <script>
+        // Set the current year
         document.getElementById('currYear').textContent = new Date().getFullYear();
+
+        // Toggle Mobile Menu Script
+        const menuToggle = document.getElementById('menu-toggle');
+        const navMenu = document.getElementById('nav-menu');
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
     </script>
 </body>
 </html>

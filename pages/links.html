@@ -3,57 +3,113 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADSE2509 Demosite - Links</title>
+    <title>ADSE2509 Demosite - Hyperlinks</title>
     <link rel="stylesheet" href="../css/main.css"/>
 </head>
 <body>
- <div id="container">
-        <!-- Links to our social media handles -->
-        <h1 class="social-heading">Follow us on social media</h1>
-            <div class="social-heading">
-                <a href="#" target="_blank" title="LinkedIn">LinkedIn</a>
-                <a href="#" target="_blank" title="Instagram">Instagram</a>
-                <a href="#" target="_blank" title="TikTok">TikTok</a>
-                <a href="#" target="_blank" title="Facebook">Facebook</a>
-                <a href="#" target="_blank" title="Twitter">Twitter</a>
-            </div>   
-        <ul>
+
+    <nav id="main-nav">
+        <div id="menu-toggle">
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+        </div>
+
+        <ul id="nav-menu">
             <li><a href="../index.html">Home</a></li>
-        <li><a href="../pages/text-formatting.html">Text-formatting</a></li>
-        <li><a href="../pages/lists.html">Lists</a></li>
-        <li><a href="../pages/links.html">Links</a></li>
-        <li><a href="../images/images.html">Images</a></li>
-        <li><a href="page_layout.html">Page Layouts</a></li>
-        <li><a href="#">CSS</a><ul>
-            <li><a href="css_pages/animation.html">Animation</a></li>
-            <li><a href="css_pages/transformations.html">Transformations</a></li>
-            <li><a href="css_pages/transitions.html">Transitions</a></li>
-        </ul></li>
+            
+            <li><a href="text-formatting.html">Text Formatting</a></li>
+            <li><a href="lists.html">Lists</a></li>
+            <li><a href="links.html">Links</a></li>
+            <li><a href="tables.html">Tables</a></li> <li><a href="forms.html">Forms</a></li>   <li><a href="multimedia.html">Multimedia</a></li> <li><a href="../images/images.html">Images</a></li>
+            
+            <li><a href="page_layout.html">Page Layouts</a></li>
+            
+            <li><a href="#">CSS</a>
+                <ul>
+                    <li><a href="css_pages/animation.html">Animation</a></li>
+                    <li><a href="css_pages/transformations.html">Transformations</a></li>
+                    <li><a href="css_pages/transitions.html">Transitions</a></li>
+                </ul>
+            </li>
         </ul> 
+    </nav> 
+    
+    <div id="container">
+        <h2 class="social-heading">Follow us on social media</h2>
+        <div class="social-heading">
+            <a href="#" target="_blank" title="LinkedIn">LinkedIn</a>
+            <a href="#" target="_blank" title="Instagram">Instagram</a>
+            <a href="#" target="_blank" title="TikTok">TikTok</a>
+            <a href="#" target="_blank" title="Facebook">Facebook</a>
+            <a href="#" target="_blank" title="Twitter">Twitter</a>
+        </div>   
 
-
-    <h1 class="page-heading">Page Links<span class="page-heading-underline"></span></h1>
+        <h1 class="page-heading">
+            HTML Hyperlinks
+            <span class="page-heading-underline"></span>
+        </h1>
        
-    <p>PAGE CONTENT goes here.</p>
+        <p>
+            Hyperlinks are used to navigate between pages. Below are examples of different types of links used in HTML.
+        </p>
+
+        <h3>1. External Link (Absolute Path)</h3>
+        <p>This link takes you to a different website on the internet.</p>
+        <p>
+            <a href="https://www.google.com" target="_blank" title="Go to Google">
+                Visit Google (Opens in new tab)
+            </a>
+        </p>
+
+        <h3>2. Internal Link (Relative Path)</h3>
+        <p>This link takes you to another page within this same website.</p>
+        <p>
+            <a href="../index.html" title="Go to Home">Go back to Home Page</a>
+        </p>
+
+        <h3>3. Email Link</h3>
+        <p>This link opens the user's default email program.</p>
+        <p>
+            <a href="mailto:info@adandesigns.example">Contact Us via Email</a>
+        </p>
+
+        <h3>4. Image Link</h3>
+        <p>You can click the image below to go to the Images page.</p>
+        <p>
+            <a href="../images/images.html">
+                <img src="../images/city-9169729_1280.jpg" alt="City View" width="200" style="border-radius: 10px; border: 2px solid white;">
+            </a>
+        </p>
+
+        <h3>5. Bookmark Link</h3>
+        <p>
+            <a href="#container">Jump to the top of this container</a>
+        </p>
    
-  
-    <footer class="page-footer">
-        ADSE2509 Copyright 2025 - &copy;
-        <span id="currYear"></span><br>
-        Designed by
-        <a href="https://adandesigns.example" target="_blank">
-            Adan Designs
-        </a>
-    </footer>
- 
-</div>
- 
-<script>
-    document.getElementById("currYear").textContent =
-        new Date().getFullYear();
-</script>
- 
+        <footer class="page-footer">
+            ADSE2509 Copyright 2025 - &copy;
+            <span id="currYear"></span><br>
+            Designed by
+            <a href="https://adandesigns.example" target="_blank">Adan Designs</a>
+        </footer>
+    </div>
+
+    <script>
+        // Set Year
+        document.getElementById("currYear").textContent = new Date().getFullYear();
+
+        // Menu Toggle Script
+        const menuToggle = document.getElementById('menu-toggle');
+        const navMenu = document.getElementById('nav-menu');
+
+        if (menuToggle && navMenu) {
+            menuToggle.addEventListener('click', () => {
+                menuToggle.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+        }
+    </script>
+
 </body>
 </html>
- 
- 

@@ -3,67 +3,189 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADSE2509 Demosite - HTML forms</title>
+    <title>ADSE2509 Demosite - HTML Forms</title>
     <link rel="stylesheet" href="../css/main.css"/>
 </head>
 <body>
-    <nav id="main-nav">
-    <button id="menu-toggle" aria-label="Toggle Menu">
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
-    </button>
-    <ul id="nav-menu">
-            <li><a href="../index.html">Home</a></li>
-        <li><a href="../pages/text-formatting.html">Text-formatting</a></li>
-        <li><a href="../pages/lists.html">Lists</a></li>
-        <li><a href="../pages/links.html">Links</a></li>
-        <li><a href="../images/images.html">Images</a></li>
-        <li><a href="../pages/page_layout.html">Page Layouts</a></li>
-        <li><a href="#">CSS</a><ul>
-            <li><a href="pages/css_pages/animation.html">Animation</a></li>
-            <li><a href="pages/css_pages/transformations.html">Transformations</a></li>
-            <li><a href="pages/css_pages/transitions.html">Transitions</a></li>
-        </ul></li>
-        </ul> </nav> 
     
- <div id="container">
-        <!-- Links to our social media handles -->
+    <nav id="main-nav">
+        <div id="menu-toggle">
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+        </div>
+
+        <ul id="nav-menu">
+            <li><a href="../index.html">Home</a></li>
+            
+            <li><a href="text-formatting.html">Text Formatting</a></li>
+            <li><a href="lists.html">Lists</a></li>
+            <li><a href="links.html">Links</a></li>
+            <li><a href="tables.html">Tables</a></li> <li><a href="forms.html">Forms</a></li>   <li><a href="multimedia.html">Multimedia</a></li> <li><a href="../images/images.html">Images</a></li>
+            
+            <li><a href="page_layout.html">Page Layouts</a></li>
+            
+            <li><a href="#">CSS</a>
+                <ul>
+                    <li><a href="css_pages/animation.html">Animation</a></li>
+                    <li><a href="css_pages/transformations.html">Transformations</a></li>
+                    <li><a href="css_pages/transitions.html">Transitions</a></li>
+                </ul>
+            </li>
+        </ul> 
+    </nav>
+    
+    <div id="container">
         <h2 class="social-heading">Follow us on social media</h2>
-            <div class="social-heading">
-                <a href="#" target="_blank" title="LinkedIn">LinkedIn</a>
-                <a href="#" target="_blank" title="Instagram">Instagram</a>
-                <a href="#" target="_blank" title="TikTok">TikTok</a>
-                <a href="#" target="_blank" title="Facebook">Facebook</a>
-                <a href="#" target="_blank" title="Twitter">Twitter</a>
-            </div>   
-        
+        <div class="social-heading">
+            <a href="#" target="_blank" title="LinkedIn">LinkedIn</a>
+            <a href="#" target="_blank" title="Instagram">Instagram</a>
+            <a href="#" target="_blank" title="TikTok">TikTok</a>
+            <a href="#" target="_blank" title="Facebook">Facebook</a>
+            <a href="#" target="_blank" title="Twitter">Twitter</a>
+        </div>   
 
-
-    <h1 class="page-heading">
-        HTML forms
-        <span class="page-heading-underline"></span>
-    </h1>
+        <h1 class="page-heading">
+            HTML Forms
+            <span class="page-heading-underline"></span>
+        </h1>
        
-    <p>PAGE CONTENT goes here.</p>
-   
-  
-    <footer class="page-footer">
-        ADSE2509 Copyright 2025 - &copy;
-        <span id="currYear"></span><br>
-        Designed by
-        <a href="https://adandesigns.example" target="_blank">
-            Adan Designs
-        </a>
-    </footer>
- 
-</div>
- 
-<script>
-    document.getElementById("currYear").textContent =
-        new Date().getFullYear();
-</script>
- 
+        <p>An HTML form is an interactive tool used on your webpage...</p>
+
+        <form method="post" name="frmRegister" id="frmRegister" title="Please enter your details" accept-charset="utf-8">
+            
+            <fieldset>
+                <legend>Personal Details</legend>
+                <p>
+                    <label for="txtFirstName">First Name:</label> <br>
+                    <input type="text" autofocus id="txtFirstName" name="txtFirstName" tabindex="10" placeholder="First Name" required>
+                </p>
+                <p>
+                    <label for="txtLastName">Last Name:</label> <br>
+                    <input type="text" id="txtLastName" name="txtLastName" tabindex="20" placeholder="Last Name" required>
+                </p>
+                <p>
+                    <label for="dtpBirthdate">Birth Date:</label> <br>
+                    <input type="date" id="dtpBirthdate" name="dtpBirthdate" tabindex="30" required>
+                </p>
+                <p>
+                    <label>Gender:</label> <br>
+                    <input type="radio" id="rdoMale" name="Gender" value="Male" tabindex="40" required> <label for="rdoMale">Male</label>
+                    <input type="radio" id="rdoFemale" name="Gender" value="Female" tabindex="50" required> <label for="rdoFemale">Female</label>
+                </p>
+                <p>
+                    <label for="txtMaritalStatus">Marital Status:</label> <br>
+                    <input type="text" id="txtMaritalStatus" name="txtMaritalStatus" tabindex="60" placeholder="Select Status" list="dtlMaritalStatus">
+                    <datalist id="dtlMaritalStatus">
+                        <option value="Single">Single</option>
+                        <option value="Engaged">Engaged</option>
+                        <option value="Married">Married</option>
+                        <option value="Separated">Separated</option>
+                        <option value="Divorced">Divorced</option>
+                    </datalist>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Account Details</legend>
+                <p>
+                    <label for="txtUsername">Username:</label><br>
+                    <input type="text" required id="txtUsername" name="txtUsername" placeholder="Enter username" tabindex="70">
+                </p>
+                <p>
+                    <label for="txtPassword">Password:</label><br>
+                    <input type="password" required id="txtPassword" name="txtPassword" placeholder="Enter password" 
+                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%^*_]).{8,}$" 
+                    title="Must contain 1 upper, 1 lower, 1 number, 1 special char" tabindex="80">
+                </p>
+                <p>
+                    <label for="txtConfirmPassword">Confirm Password:</label><br>
+                    <input type="password" required id="txtConfirmPassword" name="txtConfirmPassword" placeholder="Confirm password" tabindex="90">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Contact Details</legend>
+                <p>
+                    <label for="txtPhoneNumber">Phone Number:</label><br>
+                    <input type="tel" id="txtPhoneNumber" name="txtPhoneNumber" placeholder="+2547--------" tabindex="100">
+                </p>
+                <p>
+                    <label for="txtEmail">Email:</label><br>
+                    <input type="email" id="txtEmail" name="txtEmail" placeholder="name@example.com" tabindex="110">
+                </p>
+                <p>
+                    <label for="txtPostalAddress">Postal Address:</label><br>
+                    <input type="text" id="txtPostalAddress" name="txtPostalAddress" placeholder="P.O. Box" tabindex="120">
+                </p>
+                <p>
+                    <label for="txtCity">City:</label><br>
+                    <input type="text" required id="txtCity" name="txtCity" tabindex="130">
+                </p>
+                <p>
+                    <label for="sltCountry">Country:</label> <br>
+                    <select id="sltCountry" name="sltCountry" tabindex="140">
+                        <option value="Uganda">Uganda</option>
+                        <option value="Burundi">Burundi</option>
+                        <option value="Rwanda">Rwanda</option>
+                        <option value="Ethiopia">Ethiopia</option>
+                        <option selected value="Somalia">Somalia</option>
+                    </select>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Other Details</legend>
+                <p>
+                    <label>Hobbies:</label> <br>
+                    <label><input type="checkbox" tabindex="150" value="Movies" name="hobbies"> Movies</label><br>
+                    <label><input type="checkbox" tabindex="160" value="Upcycling" name="hobbies"> Upcycling</label><br>
+                    <label><input type="checkbox" tabindex="170" value="Swimming" name="hobbies"> Swimming</label><br>
+                    <label><input type="checkbox" tabindex="180" value="Football" name="hobbies"> Football</label><br>
+                    <label><input type="checkbox" tabindex="190" value="Reading" name="hobbies"> Reading</label><br>
+                    <label><input type="checkbox" tabindex="200" value="Travelling" name="hobbies"> Travelling</label><br>
+                    <label><input type="checkbox" tabindex="210" value="Cooking" name="hobbies"> Cooking</label><br>
+                    <label><input type="checkbox" tabindex="220" value="Writing" name="hobbies"> Writing</label><br>
+                </p>
+                <p>
+                    <label for="txaSummary">Briefly Describe Yourself</label><br/>
+                    <textarea name="txaSummary" id="txaSummary" placeholder="Professional Summary" tabindex="290"></textarea>
+                </p>
+                <p>
+                    <label for="fileField">Upload CV &amp; Certificates <span class="required-field">*</span> <br/>
+                    <small>Max size (5MB). Formats: pdf, doc, docx, odf, txt</small></label><br/>
+                    <input type="file" name="fileField" id="fileField" tabindex="310"/>
+                </p>
+                <p>
+                    <input type="submit" name="btnSubmit" id="btnSubmit" tabindex="320" value="Submit"/>&nbsp;&nbsp;
+                    <input type="reset" name="btnReset" id="btnReset" tabindex="330" value="Reset"/><br/>
+                </p>
+            </fieldset>
+        </form>
+    
+        <footer class="page-footer">
+            ADSE2509 Copyright 2025 - &copy;
+            <span id="currYear"></span><br>
+            Designed by
+            <a href="https://adandesigns.example" target="_blank">Adan Designs</a>
+        </footer>
+    </div>
+
+    <script>
+        // 1. Set the Year
+        document.getElementById("currYear").textContent = new Date().getFullYear();
+
+        // 2. Toggle Mobile Menu (THIS WAS MISSING)
+        const menuToggle = document.getElementById('menu-toggle');
+        const navMenu = document.getElementById('nav-menu');
+
+        if (menuToggle && navMenu) {
+            menuToggle.addEventListener('click', () => {
+                menuToggle.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+        }
+    </script>
+
 </body>
 </html>
