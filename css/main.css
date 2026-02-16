@@ -375,3 +375,14 @@ input[type="reset"], input[type="button"] {
     border-radius: 7px;
     border: thin outset rgba(231, 221, 222,.9);
 }
+
+/*Style the canvas using ID attribute*/
+#myCanvas
+{
+    display: flex;
+    width: 55%;
+    height: 55%;
+    border: 3px groove #f00;
+    margin: 8px auto;
+    overflow: auto;
+}

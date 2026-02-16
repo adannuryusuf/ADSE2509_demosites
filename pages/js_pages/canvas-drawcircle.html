@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADSE2509 Demosite - </title>
+    <title>ADSE2509 Demosite - Canvas Drawing Circle</title>
     <link rel="stylesheet" href="../../css/main.css"/>
-    <script defer src="../../js/js_localstorage.js"></script>
+    <script defer src="../../js/canvas_drawcircle.js"></script>
 </head>
 <body>
     
@@ -55,34 +55,14 @@
         </div>   
 
         <h1 class="page-heading">
-            User Details Local Storage
+            Canvas Drawing Circle
             <span class="page-heading-underline"></span>
         </h1>
        
-        <p>Please enter your details in the form below</p>
-        <form method="post" name="frmUserDetails" id="frmUserDetails" title="Please enter your details" accept-charset="UTF-8">
-            <fieldset>
-                <legend>User Details</legend>
-                <p>
-                    <label for="txtNames">Names <span class="required-field">*</span>:</label><br>
-                    <input type="text" name="txtNames" id="txtNames" autofocus required form="frmUserDetails" tabindex="10" title="Please enter your name" 
-                    placeholder="Jane Doe"/>
-                </p>
-                <p>
-                    <label for="txtEmails">Email <span class="required-field">*</span>:</label><br>
-                    <input type="text" name="txtEmails" id="txtEmails" autofocus required form="frmUserDetails" tabindex="20" title="Please enter your email" 
-                    placeholder="abc@gmail.com"/>
-                </p>
-                <p>
-                    <input type="submit" name="btnSubmit" id="btnSubmit" tabindex="30" title="submit your details"  value="Submit" 
-                    onclick="storeDetails(event)"/>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <input type="reset" name="btnReset" id="btnReset" tabindex="40" title="Clear your details"  value="reset" 
-                    onclick="deleteDetails(event)"/>&nbsp;&nbsp;&nbsp;&nbsp;
-
-                </p>
-                <small style="font-size: .55em;">Fields marked with <span class="required-field">*</span>are required.</small>
-            </fieldset>
-        </form>
+        <p>This page illustrates how to draw Circle in HTML5 canvas using JS.</p>
+        <canvas id="myCanvas">
+            <script defer src="../../js/canvas_drawcircle.js"></script>
+        </canvas>
    
         <footer class="page-footer">
             ADSE2509 Copyright 2025 - &copy;
