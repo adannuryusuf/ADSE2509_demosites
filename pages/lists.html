@@ -34,21 +34,19 @@
             </li>
              <li><a href="#">JS</a>
                 <ul>
-                    <li><a href="../js_pages/js-intro.html">JS Intro</a></li>
-                    <li><a href="../js_pages/js-selection.html">JS Selection</a></li>
-                    <li><a href="../js_pages/">Js Calculator</a></li>
-                    <li><a href="../js_pages/">Js Objects</a></li>
-                    <li><a href="../js_pages/">Js Local Storage</a></li>
-                    <li><a href="../js_pages/">Canvas Line</a></li>
-                    <li><a href="../js_pages/">Canvas Arc</a></li>
-                    <li><a href="../js_pages/">Canvas Circle</a></li>
+                    <li><a href="js_pages/js-intro.html">JS Intro</a></li>
+                    <li><a href="js_pages/js-selection.html">JS Selection</a></li>
+                    <li><a href="js_pages/js-calculator.html">Js Calculator</a></li>
+                    <li><a href="js_pages/js-objects.html">Js Objects</a></li>
+                    <li><a href="js_pages/js-local-storage.html">Js Local Storage</a></li>
+                    <li><a href="js_pages/js-arrays.html">JS Arrays</a></li>
                 </ul>
             </li>
             <li><a href="#">JS</a>
                 <ul>
-                    <li><a href="../js_pages/">Canvas Line</a></li>
-                    <li><a href="../js_pages/">Canvas Arc</a></li>
-                    <li><a href="../js_pages/">Canvas Circle</a></li>
+                    <li><a href="js_pages/js-canvas-line.html">Canvas Line</a></li>
+                    <li><a href="js_pages/js-canvas-arc.html">Canvas Arc</a></li>
+                    <li><a href="js_pages/js-canvas-circle.html">Canvas Circle</a></li>
                 </ul>
             </li>
         </ul> 
@@ -163,19 +161,7 @@
         </footer>
     </div>
 
-    <script>
-        document.getElementById("currYear").textContent = new Date().getFullYear();
-        
-        const menuToggle = document.getElementById('menu-toggle');
-        const navMenu = document.getElementById('nav-menu');
-
-        if (menuToggle && navMenu) {
-            menuToggle.addEventListener('click', () => {
-                menuToggle.classList.toggle('active');
-                navMenu.classList.toggle('active');
-            });
-        }
-    </script>
+    <script async src="../js/responsive_nav.js"></script>
 
 </body>
 </html>
