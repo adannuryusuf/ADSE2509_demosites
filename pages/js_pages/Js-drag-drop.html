@@ -3,8 +3,19 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADSE2509 Demosite - Canvas Drawing Image</title>
+    <title>ADSE2509 Demosite - JS drag &amp; drop</title>
     <link rel="stylesheet" href="../../css/main.css"/>
+    <!--link to the drag and drop JS file -->
+    <script defer src="../../js/js_drag_drop.js"></script>
+    <!--internal styling-->
+    <style>
+        #div1, #div2{
+            border: #00f;
+            height: 125px;
+            width: 75px;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
     
@@ -65,15 +76,16 @@
 		</div>
 
         <h1 class="page-heading">
-            Canvas Drawing Image
+            JS drag &amp; drop
             <span class="page-heading-underline"></span>
         </h1>
        
-        <p>This page illustrates how to draw image in HTML5 canvas using JS.</p>
-        <canvas id="myCanvas">
-            <script defer src="../../js/canvas_drawimage.js"></script>
-        </canvas>
-   
+        <p>This page illustrates JS drag and drop functionality.</p>
+        <div id="div1">
+            <img src="../../images/html5_logo.png" alt="HTML5 Logo" width="75" height="75" id="image1" draggable="true" ondragstart="drag_image(event)">
+        </div><br>
+        <div id="div2" style="border-color: #f00;" ondrop="drop_image(event)" ondragover="allow_drop(event)"></div>
+        
         <footer class="page-footer">
             ADSE2509 Copyright 2025 - &copy;
             <span id="currYear"></span><br>
